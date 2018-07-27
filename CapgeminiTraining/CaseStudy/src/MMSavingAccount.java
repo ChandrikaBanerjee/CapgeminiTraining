@@ -8,7 +8,7 @@ public class MMSavingAccount extends SavingsAcc{
 	
 	
 	
-	public void withdraw(float amount)
+	public void withdraw(float amount) //Logic used for withdrawal
 	{
 	
 		if(amount>MINBAL)
@@ -22,7 +22,7 @@ public class MMSavingAccount extends SavingsAcc{
 			
 		}
 	}
-	public String toString()
+	public String toString()  //ToString method behaviour implementation
 	{
 		return "MMSavingAccount[account No is" + (getAccNo()) + ",account name is" +(getAccNm())+ " account balance is " + (getAccBal()) +"]";
 	}
