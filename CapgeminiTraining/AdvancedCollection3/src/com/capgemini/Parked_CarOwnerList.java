@@ -23,5 +23,32 @@ public class Parked_CarOwnerList {
 		
 		arrayList.remove(car);
 	}
-
+String getParkedCarLocation(int token)
+{
+	String location;
+	int section;
+	if(token>240 && token<1)
+	{
+		location="Invalid";
+		return location;
+	}
+	else if(token>=1 && token<=80)
+	{
+		location="1st Floor";
+	}
+	else if(token>=81 && token<=160)
+	{
+		token=token-80;
+		location="2nd Floor";
+		
+	}
+	else
+	{
+		token=token-160;
+		location="3rd Floor";
+	}
+	section=(int)Math.ceil(token/20.0);
+	location=location+section+"Section";
+	return location;
+}
 }

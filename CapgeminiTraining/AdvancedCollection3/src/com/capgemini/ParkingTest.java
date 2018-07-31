@@ -32,6 +32,7 @@ public class ParkingTest {
 			System.out.println(o + "\n");
 		}
 
+	System.out.println(par.getParkedCarLocation(165));
 	
     
 	}
